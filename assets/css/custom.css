@@ -1,0 +1,17 @@
+/* Style for product options */
+.purchase-options {
+  margin-bottom: 1rem;
+}
+.purchase-options label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.flavor-selectors {
+  margin-bottom: 1rem;
+}
+.price-wrapper {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+}
