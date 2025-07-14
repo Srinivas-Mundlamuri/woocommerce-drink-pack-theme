@@ -1,11 +1,23 @@
 # WooCommerce Custom Drink Subscription UI
 
+Live Product Page: [Drink Pack Subscription](https://wordpress-assignment-6178.rf.gd/?product=drink-pack)
+
+> **Note:** The product page is restricted. Please log in to view:
+>
+> - **Username:** kotimundlamuri6718@gmail.com
+> - **Password:** ******\*\*\*\*******
+
 ![Main Product Interface](woocommerce/single-product/images/web-page1.png)
 ![Main Product Interface](woocommerce/single-product/images/web-page2.png)
+
 _Custom drink subscription interface with single and double flavor options_
 
-![Main Product Interface](woocommerce/single-product/images/web-cart.png)
-\_Cart items
+---
+
+![Cart Preview](woocommerce/single-product/images/web-cart.png)
+Cart items and flavor selections in action
+
+---
 
 ## Table of Contents
 
@@ -17,19 +29,28 @@ _Custom drink subscription interface with single and double flavor options_
 - [Troubleshooting](#troubleshooting)
 - [Screenshots](#screenshots)
 
+---
+
 ## Features
 
-### Dual Subscription Options
+### ✅ Dual Subscription Options
 
-- **Single Flavor Subscription** (Recommended)
-  - Visual flavor selection
-  - Delivery frequency options
-  - Benefits checklist
+- **Single Flavor Subscription** (⭐ Recommended)
+
+  - Visual flavor selection using image-based radio buttons
+  - Weekly delivery display with feature breakdown
+  - Styled price and badge UI
+  - Native variation support (fully compatible with WooCommerce)
+
 - **Double Flavor Subscription**
-  - Simple one-click add to cart
-  - Discounted pricing display
+  - Select two flavors visually
+  - Adds two variation items to the cart via AJAX
+  - Fully compatible with WooCommerce cart system
+  - Works without reloading the page
 
-![Flavor Selection](flavor-selection-screenshot.jpg)
+![Flavor Selection](woocommerce/single-product/images/flavor-selection-ui.jpg)
+
+---
 
 ## Requirements
 
@@ -40,23 +61,20 @@ _Custom drink subscription interface with single and double flavor options_
 | PHP         | 7.4+    |
 | jQuery      | 3.0+    |
 
+---
+
 ## Installation
 
-1. **Add template file**:
+1. **Add Template Override**
+
+   Copy the custom product template file to your theme:
+
    ```bash
    wp-content/
-   └── your-theme/
-       └── woocommerce/
-           └── single-product/
-               └── add-to-cart/
-                   └── variable.php
-   Add custom CSS to your theme's style.css or customizer.
+   └── themes/
+       └── twentytwentyfive-child/
+           └── woocommerce/
+               └── single-product/
+                   └── add-to-cart/
+                       └── variable.php
    ```
-
-Verify product setup:
-
-Ensure product is variable type
-
-Create all flavor variations
-
-Set product gallery images
